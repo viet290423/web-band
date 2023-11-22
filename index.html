@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super-Band</title>
+    <link rel="icon" href="./assets/img/ic.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="./assets/script.js"></script>
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="nav_arrow_down ti-angle-down"></i> 
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search_btn">
+                <!-- <i class=" search_icon ti-search">
+                    <input id="search" type="search" placeholder="Search...">
+                </i> -->
+                <input id="search" type="search" placeholder="Search...">
+            </div>
+
+            <div id="menu_bar-btn" class="menu_bars" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+
+        <div id="slider" style="max-width: 2000px;">
+            <div class="myslides text-content">
+                <img src="./assets/img/chicago.jpg" alt="">
+                <div class="text">
+                    <h2 class="text-heading">Chicago</h2>
+                    <div class="text-description">Thank you, Chicago - A night we won't forget.</div>
+                </div>
+            </div>
+            <div class="myslides text-content">
+                <img src="./assets/img/la.jpg" alt="">
+                <div class="text">
+                    <h2 class="text-heading">Los Angeles</h2>
+                    <div class="text-description">Thank you, Los Angeles - A night we won't forget.</div>
+                </div>
+            </div>
+            <div class="myslides text-content">
+                <img src="./assets/img/ny.jpg" alt="">
+                <div class="text">
+                    <h2 class="text-heading">New York</h2>
+                    <div class="text-description">Thank you, New York - A night we won't forget.</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="content">
+            <!-- The band section -->
+            <div id="band" class="content-section">
+                <h2 class="section-heading">The Band</h2>
+                <p class="section-sub-heading">We love music</p>
+                <p class="about-text">
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="member-list">
+                    <div class="member-item">
+                        <p class="member-name">Viet Nguyen Duc</p>
+                        <img src="./assets/img/bandmember.jpg" alt="" class="avatar">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">Thanh Le</p>
+                        <img src="./assets/img/bandmember.jpg" alt="" class="avatar">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">Cheese Vu</p>
+                        <img src="./assets/img/bandmember.jpg" alt="" class="avatar">
+                    </div>
+                </div>
+            </div>
+            <!-- The band section -->
+
+            <!-- Tour-section -->
+            <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">Tour Dates</h2>
+                    <p class="section-sub-heading text-white">Remember to book your tickets!</p>
+
+                    <ul class="ticket-list">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                    </ul>
+
+                    <!-- Places -->
+                    <div class="place-list">
+                        <div class="place-item">
+                            <img src="./assets/img/newyork.jpg" alt="New York" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-buy-btn" onclick="openTicketModal()">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place-item">
+                            <img src="./assets/img/paris.jpg" alt="Paris" class="place-img">
+                            <div class="place-body">
+                                <b class="place-heading">Paris</b>
+                                <p class="place-time">Sat 28 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-buy-btn" onclick="openTicketModal()">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place-item">
+                            <img src="./assets/img/sanfran.jpg" alt="San Francisco" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-time">Sun 29 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-buy-btn" onclick="openTicketModal()">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tour-section -->
+
+            <!-- Contact-section -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">Contact</h2>
+                <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div class="contact-content">
+                    <div class="contact-left">
+                       <p><i class="fa fa-map-marker" style="width: 30px;"></i>Chicago, US </p>
+                       <p><i class="fa fa-phone" style="width: 30px;"></i>Phone: +84 877947199</p>
+                       <p><i class="fa fa-envelope" style="width: 30px;"></i>Email: onetwothree@eightnineten</p>
+                    </div>
+                    <div class="contact-right">
+                        <div class="input-type">
+                            <div class="input-heading">
+                                <input id = "name" type="text" placeholder="Name" class="my_input input-half" style="margin-right: 16px;">
+                                <input id = "email" type="email" placeholder="Email" class="my_input input-half">
+                            </div>
+                            <input type="text" placeholder="Message" class="my_input ">
+                        </div>
+                        <button class="send-btn" onclick="sendButton()">Send</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact-section -->
+        </div>
+
+        <div id="footer">
+            <!-- Location -->
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.401038376897!2d105.74604180000001!3d20.962548600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313452efff394ce3%3A0x391a39d4325be464!2zVHLGsOG7nW5nIMSQ4buZIFRo4buLbmcgVGjDoG5nIEdp4bub!5e0!3m2!1svi-VN!2s!4v1623692274683!5m2!1svi-VN!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="icon-social">
+                    <i class="fa fa-facebook" style="color: #2955b4"></i>
+                    <img src="./assets/img/instagram.png" alt="ins" style="width: 17px;position: relative; top: 2px" class="fa">
+                    <i class="fa fa-apple"></i>
+                    <i class="fa fa-pinterest" style="color: red"></i>
+                    <i class="fa fa-twitter" style="color: #1DA1F2;"></i>
+                    <i class="fa fa-heart" style="color: red;"></i>
+                    <p>Powered by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">VietNguyenDuc</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ticket modal -->
+    <div class="ticket-modal " id="ticket-modal">
+        <div class="container">
+            <header class="modal-header">
+                <div class="modal-close" onclick="closeTicketModal()">
+                    <i class="ti-close"></i>
+                </div>
+                <div class="modal-head">
+                    <i class="ti-bag"></i>
+                    Tickets
+                </div>
+            </header>
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="ti-shopping-cart">Tickets, $15 per person</i>
+                </label>
+                <input id="money" type="text" class="modal-input" placeholder="How many?">
+                <label for="" class="modal-label">
+                    <i class="ti-user">Send To</i>
+                </label>
+                <input id="gmail" type="email" class="modal-input" placeholder="Enter email">
+                <button id="buy-tickets" onclick="Check()">Pay <i class="ti-check"></i></button>
+            </div>
+            <footer>
+                <p class="modal-help">Need <a href="">help?</a></p>
+            </footer>
+        </div>
+    </div>
+</body>
+<script>
+    //slide show
+    var myIndex = 0;
+    slideShow();
+
+    function slideShow() {
+        var i;
+        var x = document.getElementsByClassName("myslides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) 
+        {
+            myIndex = 1
+        }    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(slideShow, 4000);    
+    }
+
+    var header = document.getElementById('header');
+    var mobileMenu = document.getElementById('menu_bar-btn');
+    var headerHeight = header.clientHeight;
+    
+    function openMenu(){
+        if(header.clientHeight === headerHeight){
+            header.style.height = 'auto';
+        }
+        else{
+            header.style.height = null;
+        }
+    }
+
+    // Tự động đóng khi chọn menu
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    for(var i = 0; i < menuItems.length; i++){
+        var menuItem = menuItems[i]; 
+        
+        menuItem.onclick = function(event){
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+            if(!isParentMenu){
+                header.style.height = null;
+            }
+            else{
+                event.preventDefault();
+            }
+        }
+    }
+
+</script>
+</html>

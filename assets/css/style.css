@@ -1,0 +1,489 @@
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+}
+/* Commont */
+
+.text-white{
+    color: #fff !important;
+}
+
+#header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 46px;
+    background-color: #000;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li{
+    display: inline;
+    float: left;
+    position: relative;
+}
+
+
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a, #nav .subnav li:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav .nav_arrow_down{
+    font-size: 14px;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 3px 10px #ccc;
+    min-width: 160px;
+}
+
+#nav .subnav li{
+    width: 100%;
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+
+#header .menu_bars{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .menu_bars{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* #header .search_btn:hover{
+    cursor: pointer;
+    background-color: #f44336;
+} */
+ 
+#header .menu_bars:hover{
+    cursor: pointer;
+    /* color: black;
+    background-color: #e2dfdf; */
+}
+
+#header .menu_bars, #header .search_icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+/* search input */
+.search_btn{
+    float: right;
+    padding: 0;
+}
+#search{
+    background-image: url(../img/search.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 15px;
+    padding: 10px 20px 10px 30px;
+    height: 46px;
+    width: 0;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    transition: width 0.2s ease-in-out;
+}
+#search:hover{
+    cursor: pointer;
+}
+#search:focus{
+    cursor: auto;
+    width: 200px;
+    background-position: 0 10px;
+    border-color: #f44336;
+}
+#search:focus-visible{
+    outline: transparent;
+}
+#slider {
+    position: relative;
+    margin-top: 46px;
+    /* padding-top: 58%; */
+    /* background: url('/assets/img/chicago.jpg') top center / cover no-repeat; */
+}
+
+#slider .text-content{
+    /* position: absolute;
+    bottom: 47px; */
+    color: #fff;
+    width: 100%;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+    font-weight: bolder;
+}
+
+.myslides img{
+    width: 100%;
+}
+
+#slider .text{
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translate(-50%, 0);
+    margin-bottom: 50px;
+}
+
+#content .content-section{
+    width: 800px;
+    max-width: calc(100% - 32px);
+    margin: 0 auto;
+    padding: 64px 0 112px;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .member-list{
+    margin-top: 47px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .avatar{
+    margin-top: 15px;
+    width: 60%;
+    border-radius: 4px;
+}
+
+#content .member-item{
+    /* float: left; */
+    text-align: center;
+}
+
+/* Tour section */
+.tour-section{
+    background: #000;
+}
+
+.ticket-list{
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.ticket-list li{
+    list-style: none;
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out{
+    background: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.ticket-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center; 
+    line-height: 24px;   
+    margin: -3px;
+}
+
+.place-list{
+    display: flex;
+    margin: 32px -8px 0;
+    /* padding-bottom: 48px; */
+}
+.place-item{
+    padding: 0 8px;
+}
+.place-img{
+    display: block;
+    width: 100%;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    padding: 16px 16px 0 16px;
+    background-color: #fff;
+    font-size: 15px;
+}
+.place-heading{
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: bolder;
+}
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.5;
+}
+.place-buy-btn{
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin: 15px 0 16px;
+    border: none;
+}   
+.place-buy-btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+/* Contact-content */
+.contact-content{
+    margin: 30px 0 0;
+    height: 128px;
+}
+.contact-left{
+    width: 50%;
+    float: left;
+}
+.contact-left p{
+    margin: 7px;
+}
+.contact-right{
+    width: 50%;
+    float: left;
+    /* padding: 0 10px; */
+}
+.contact-right .my_input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    /* margin: 0 8px; */
+}
+.input-heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.contact-right .input-half{
+    width: 48%;
+}
+.send-btn{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin: 15px 0 0;
+    border: none;
+    float: right;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.send-btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+/* location */
+.location iframe{
+    width : 100%; 
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+}
+.icon-social{
+    font-size: 20px;
+    text-align: center;
+    margin: 65px 0 65px 0;
+}
+.fa:hover{
+    opacity: 1.5;
+}
+
+.icon-social p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.icon-social a{
+    color: inherit;
+}
+
+/* Ticket modal */
+.ticket-modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    animation: animatetop 0.4s;
+}
+.ticket-modal.open{
+    display: flex;
+}
+.container{
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+}
+.modal-header{
+    background: #009688;
+    height: 130px;
+}
+.modal-close{
+    float: right;
+    padding: 12px 16px;
+    color: #fff;
+}
+.modal-close:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.modal-head{
+    text-align: center;
+    line-height: 130px;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+.modal-body{
+    padding: 0.01em 16px;
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin: 15px 0;
+}
+.modal-input{
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
+#buy-tickets{
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    background: #009688;
+    padding: 16px;
+    margin: 16px 0;
+}
+#buy-tickets:hover{
+    background: #ccc;
+    color: #000;
+    
+}
+.modal-help{
+    float: right;
+    margin: 15px 16px 15px 0;
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width:600px) {
+    /* For tablets: */
+    .contact-left, .contact-right{
+      width: 100%;
+      margin-top: 10px;
+    }
+    #nav{
+
+    }
+
+}
