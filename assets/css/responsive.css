@@ -79,7 +79,6 @@
         margin: 5px 0;
     }
 
-
     .place-list{
         display: block;
     }
@@ -91,5 +90,14 @@
     }
     .location iframe{
         height: 250px;
+    }
+
+    .contact-left, .contact-right{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .s-full-width{
+        width: 100% !important;
     }
 }

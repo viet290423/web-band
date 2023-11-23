@@ -312,6 +312,7 @@ body{
     padding: 11px 16px;
     margin: 15px 0 16px;
     border: none;
+    text-align: center;
 }   
 .place-buy-btn:hover{
     color: #000;
@@ -374,7 +375,7 @@ body{
     border-radius: 8px;
 }
 .icon-social{
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     margin: 65px 0 65px 0;
 }
@@ -474,16 +475,4 @@ body{
         top: 0;
         opacity: 1
     }
-}
-
-@media only screen and (max-width:600px) {
-    /* For tablets: */
-    .contact-left, .contact-right{
-      width: 100%;
-      margin-top: 10px;
-    }
-    #nav{
-
-    }
-
 }
